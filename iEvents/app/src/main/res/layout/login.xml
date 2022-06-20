@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@color/orange"
+            android:id="@+id/imageView"
+            android:layout_height="221dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_bright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            style="@style/TextBoldLarge"
+            android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_width="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/TextRegularNormal"
+            android:id="@+id/textView3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:text="@string/app_desc"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="-64dp"
+            android:layout_width="0dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content">
+
+                <ImageView
+                    android:id="@+id/btnEditPhoto"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="98dp"
+                    android:padding="8dp"
+                    style="@style/clickAble"
+                    android:src="@drawable/img_avatar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/image" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextRegularNormal"
+                    android:background="@drawable/background_text"
+                    android:hint="@string/type_name"
+                    android:id="@+id/txtName"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnEditPhoto" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextRegularNormal"
+                    android:background="@drawable/background_text"
+                    android:hint="@string/type_text"
+                    android:id="@+id/txtPolindrome"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    app:layout_constraintEnd_toEndOf="@+id/txtName"
+                    app:layout_constraintStart_toStartOf="@+id/txtName"
+                    app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/TextMediumLarge"
+                    android:background="@drawable/button_orange_click"
+                    android:id="@+id/btnCheck"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_width="0dp"
+                    android:text="@string/check"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/txtPolindrome"
+                    app:layout_constraintStart_toEndOf="@id/btnNext"
+                    app:layout_constraintTop_toBottomOf="@+id/txtPolindrome"
+                    app:layout_constraintWidth_percent="0.3" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    style="@style/TextMediumLarge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/button_orange_click"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toStartOf="@+id/btnCheck"
+                    app:layout_constraintStart_toStartOf="@+id/txtPolindrome"
+                    app:layout_constraintTop_toTopOf="@+id/btnCheck"
+                    app:layout_constraintWidth_percent="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextRegularSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:text="@string/copyright"
+            android:textColor="@color/grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

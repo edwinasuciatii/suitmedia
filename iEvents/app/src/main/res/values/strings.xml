@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">iEvents</string>
+    <string name="image">TODO</string>
+    <string name="welcome">Welcome</string>
+    <string name="app_desc">This is app for suitmedia mobile developer test</string>
+    <string name="type_name">Type name here…</string>
+    <string name="type_text">Type text palindrome</string>
+    <string name="next">Next</string>
+    <string name="check">Check</string>
+    <string name="copyright">Copyright © 2020 Suitmedia All Rights Reserved.</string>
+    <string name="choose_event">Choose Event</string>
+    <string name="choose_guest">Choose Guest</string>
+    <string name="hallo">Hallo,</string>
+    <string name="arman">Arman!</string>
+    <string name="events">Events</string>
+    <string name="card_title">Card Title</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="date">15 Jan 2021</string>
+    <string name="time">9.00 AM</string>
+    <string name="guests">Guests</string>
+    <string name="john_doe">John Doe</string>
+    <string name="choose_photo">Pilih Media Foto</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+</resources>

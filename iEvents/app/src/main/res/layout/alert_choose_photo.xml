@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:background="#bcbcbc"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="2dp"/>
+    <LinearLayout
+        android:background="#bcbcbc"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_width="50dp"
+        android:layout_height="2dp"/>
+    <TextView
+        android:text="@string/choose_photo"
+        android:fontFamily="@font/custom_font_regular"
+        android:textStyle="italic"
+        android:textColor="@color/grey4"
+        android:layout_gravity="center"
+        android:textSize="12dp"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="SpUsage" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btnCamera"
+                android:src="@drawable/ic_content_camera"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:tint="#999999"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:contentDescription="@string/image"
+                tools:ignore="InefficientWeight,NestedWeights" />
+            <TextView
+                android:text="@string/camera"
+                android:fontFamily="@font/custom_font_regular"
+                android:textSize="12dp"
+                android:textColor="@color/grey4"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/btnGallery"
+                android:src="@drawable/ic_content_gallery"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:tint="#999999"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:contentDescription="@string/image"
+                tools:ignore="InefficientWeight,NestedWeights" />
+            <TextView
+                android:text="@string/gallery"
+                android:fontFamily="@font/custom_font_regular"
+                android:textColor="@color/grey4"
+                android:textSize="12dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

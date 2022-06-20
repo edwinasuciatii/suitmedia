@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_height="221dp"
+            android:layout_width="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_bright"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="49dp"
+            android:text="@string/hallo"
+            style="@style/TextBoldExtraLarge"
+            android:textColor="@color/black2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/arman"
+            style="@style/TextBoldExtraLarge"
+            android:textColor="@color/orange"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/orange"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            app:layout_constraintBottom_toBottomOf="@id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView4"
+            tools:layout_constraintStart_toEndOf="@id/textView4" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/orange"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/orange"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView4"
+            app:layout_constraintTop_toBottomOf="@id/view2"  />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_orange_click"
+            android:text="@string/choose_event"
+            android:textAllCaps="false"
+            style="@style/TextMediumLarge"
+            android:textColor="@color/white"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuest"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_orange_click"
+            android:text="@string/choose_guest"
+            style="@style/TextMediumLarge"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/btnEvent"
+            app:layout_constraintStart_toStartOf="@+id/btnEvent"
+            app:layout_constraintTop_toBottomOf="@id/btnEvent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="244dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/img_suitmedia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnGuest"
+            android:contentDescription="@string/image" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            app:layout_constraintVertical_bias="1.0"
+            android:src="@drawable/img_bg_bottom"
+            android:contentDescription="@string/image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

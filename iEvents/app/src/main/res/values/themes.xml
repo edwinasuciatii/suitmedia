@@ -1,0 +1,86 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.IEvents" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="clickAble">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="TextBoldExtraLarge">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/custom_font_bold</item>
+    </style>
+
+    <style name="TextBoldLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/custom_font_bold</item>
+    </style>
+
+    <style name="TextBoldNormal">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/custom_font_bold</item>
+    </style>
+
+    <style name="TextBoldSmall">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/custom_font_bold</item>
+    </style>
+
+    <style name="TextMediumExtraLarge">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/custom_font_medium</item>
+    </style>
+
+    <style name="TextMediumLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/custom_font_medium</item>
+    </style>
+
+    <style name="TextMediumNormal">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/custom_font_medium</item>
+    </style>
+
+    <style name="TextMediumSmall">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/custom_font_medium</item>
+    </style>
+
+    <style name="TextRegularExtraLarge">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/custom_font_regular</item>
+    </style>
+
+    <style name="TextRegularLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/custom_font_regular</item>
+    </style>
+
+    <style name="TextRegularNormal">
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/custom_font_regular</item>
+    </style>
+
+    <style name="TextRegularSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/custom_font_regular</item>
+    </style>
+    <style name="TextRegularExtraSmall">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/custom_font_regular</item>
+    </style>
+</resources>
